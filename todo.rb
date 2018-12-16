@@ -1,4 +1,4 @@
-#create a Todo List
+#create a Todo List -  the class List handles actions implemented on a List object.
 class List
 
 end
