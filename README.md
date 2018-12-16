@@ -13,3 +13,20 @@ Secondary User Stories
 Reach User Stories
 1. As a user I can set a task status
 2. As a user I can toggle a task status as complete or incomplete
+
+
+Outline of Classes, Methods And Actions
+Classes And Methods:
+
+List Class
+* Create a list
+* Add task to list
+* Show all tasks
+* Read a task from a file
+* Write a list to a file
+* Delete a task
+* Update a task
+
+Task Class
+
+* Create a task item
