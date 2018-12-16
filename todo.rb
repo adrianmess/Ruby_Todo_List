@@ -5,6 +5,7 @@ end
 
 #add tasks to list
 class Task
+    attr_reader :description
 end
 
 
