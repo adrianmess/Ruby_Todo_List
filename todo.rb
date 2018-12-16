@@ -1,6 +1,9 @@
 #create a Todo List -  the class List handles actions implemented on a List object.
 class List
 
+    def initialize
+        @all_tasks = []
+    end
 end
 
 #add tasks to list - manages actions that can be implemented on a task object
