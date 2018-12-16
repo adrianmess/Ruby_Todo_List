@@ -1,5 +1,6 @@
 #create a Todo List -  the class List handles actions implemented on a List object.
 class List
+    attr_reader :all_tasks
 
     def initialize
         @all_tasks = []
