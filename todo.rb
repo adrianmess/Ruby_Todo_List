@@ -21,8 +21,10 @@ class Task
     end
 end
 
-
+#Program runner
 if __FILE__ == $PROGRAM_NAME
     my_list = List.new
     puts "You have created a new list"
+    my_list.add(Task.new('Make Breakfast'))
+    puts 'You have added a task to the Todo List'
 end
