@@ -3,7 +3,7 @@ class List
 
 end
 
-#add tasks to list
+#add tasks to list - manages actions that can be implemented on a task object
 class Task
     attr_reader :description
 
