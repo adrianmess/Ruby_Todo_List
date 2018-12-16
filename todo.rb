@@ -5,6 +5,11 @@ class List
     def initialize
         @all_tasks = []
     end
+
+    #method adds task to all_tasks array
+    def add(task)
+        @all_tasks << task
+    end
 end
 
 #add tasks to list - manages actions that can be implemented on a task object
