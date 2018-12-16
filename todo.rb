@@ -2,6 +2,7 @@
 class List
     attr_reader :all_tasks
 
+
     def initialize
         @all_tasks = []
     end
@@ -10,6 +11,11 @@ class List
     def add(task)
         @all_tasks << task
     end
+
+    def show
+        all_tasks
+    end
+
 end
 
 #add tasks to list - manages actions that can be implemented on a task object
