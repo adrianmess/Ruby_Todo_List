@@ -60,6 +60,6 @@ end
 
 #Program runner
 if __FILE__ == $PROGRAM_NAME
-    my_list = List.new
-
+        include Menu
+        include Promptable
 end
