@@ -12,6 +12,9 @@ module Menu
     end
 end
 
+module Promptable
+
+end
 #create a Todo List -  the class List handles actions implemented on a List object.
 #manages the behavior of an individual list
 class List
