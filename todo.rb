@@ -1,3 +1,7 @@
+module Menu
+
+end
+
 #create a Todo List -  the class List handles actions implemented on a List object.
 #manages the behavior of an individual list
 class List
@@ -23,14 +27,14 @@ end
 
 #add tasks to list - manages actions that can be implemented on a task object
 #manages the behavior of an individual task.
-# class Task
-#     attr_reader :description
+class Task
+    attr_reader :description
 
-#     def initialize(description)
-#         @description = description
-#     end
+    def initialize(description)
+        @description = description
+    end
 
-# end
+end
 
 #Program runner
 if __FILE__ == $PROGRAM_NAME
