@@ -6,6 +6,10 @@ module Menu
                 2) Show
                 3) Quit "
     end
+
+    def show
+        menu
+    end
 end
 
 #create a Todo List -  the class List handles actions implemented on a List object.
