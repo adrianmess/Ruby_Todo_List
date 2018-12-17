@@ -1,5 +1,11 @@
 module Menu
-
+    def menu
+        puts "Welcome the ToDo List App.
+                Here are a list of options:
+                1) Add
+                2) Show
+                3) Quit "
+    end
 end
 
 #create a Todo List -  the class List handles actions implemented on a List object.
