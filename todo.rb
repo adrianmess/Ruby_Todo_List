@@ -1,4 +1,5 @@
 #create a Todo List -  the class List handles actions implemented on a List object.
+#manages the behavior of an individual list
 class List
     attr_reader :all_tasks
 
@@ -21,6 +22,7 @@ class List
 end
 
 #add tasks to list - manages actions that can be implemented on a task object
+#manages the behavior of an individual task.
 # class Task
 #     attr_reader :description
 
