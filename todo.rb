@@ -4,7 +4,7 @@ module Menu
                 Here are a list of options:
                 1) Add
                 2) Show
-                3) Quit "
+                Q) Quit "
     end
 
     def show
@@ -20,7 +20,7 @@ module Promptable
         symbol = ':>'
         print message
         print symbol
-        gets.chomp
+        user_input = gets.chomp
 end
 
 
