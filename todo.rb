@@ -13,14 +13,11 @@ module Menu
 end
 
 module Promptable
-    #alternative way to write method
-    # def prompt(message = 'What would you like to do?', symbol = ':> ')   .... END
-    def prompt
-        message = 'What would you like to do?'
-        symbol = ':>'
+    def prompt(message = 'What would you like to do?', symbol = ':> ')
         print message
         print symbol
-        user_input = gets.chomp
+        gets.chomp
+    end
 end
 
 
@@ -63,5 +60,5 @@ if __FILE__ == $PROGRAM_NAME
         include Menu
         include Promptable
         my_list = List.new
-        puts "Please choose from the following list:"
+
 end
