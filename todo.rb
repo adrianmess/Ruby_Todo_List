@@ -62,4 +62,6 @@ end
 if __FILE__ == $PROGRAM_NAME
         include Menu
         include Promptable
+        my_list = List.new
+        puts "Please choose from the following list:"
 end
