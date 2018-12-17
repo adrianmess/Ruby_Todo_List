@@ -13,8 +13,17 @@ module Menu
 end
 
 module Promptable
-
+    #alternative way to write method
+    # def prompt(message = 'What would you like to do?', symbol = ':> ')   .... END
+    def prompt
+        message = 'What would you like to do?'
+        symbol = ':>'
+        print message
+        print symbol
+        gets.chomp
 end
+
+
 #create a Todo List -  the class List handles actions implemented on a List object.
 #manages the behavior of an individual list
 class List
