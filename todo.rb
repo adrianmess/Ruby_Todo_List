@@ -64,6 +64,9 @@ if __FILE__ == $PROGRAM_NAME
 	# puts prompt
 	#Until the user quits, display the menu and prompt the user for their input
 	until 'q'.include?(user_input = prompt(*show).downcase)
-		puts user_input
+		case user_input
+		when "1" then puts "selected 1 (Add)"
+		when "2" then puts "selected 2 (Show)"
+		end
 	end
 end
