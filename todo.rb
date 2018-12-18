@@ -4,6 +4,7 @@ module Menu
 				Here are a list of options:
 				1) Add
 				2) Show
+				3) Write to a File
 				Q) Quit "
 	end
 
