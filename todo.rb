@@ -51,6 +51,11 @@ class List
 		IO.write(filename, @all_tasks.map(&:to_s).join("\n"))
 	end
 
+	def read_from_file(filename)
+		IO.readlines(filename).each do |line|
+			add(line.chomp)
+		end
+	end
 end
 
 #add tasks to list - manages actions that can be implemented on a task object
