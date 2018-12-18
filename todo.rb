@@ -77,6 +77,7 @@ if __FILE__ == $PROGRAM_NAME
 			when "3" then my_list.write_to_file(prompt("Please enter filename"))
 			else puts "I don't understand that response"
 		end
+		prompt('Press enter to continue', '')
 	end
 			puts "Thanks for using the menu system!"
 end
