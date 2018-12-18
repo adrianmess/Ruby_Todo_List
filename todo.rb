@@ -81,6 +81,7 @@ if __FILE__ == $PROGRAM_NAME
 			when "1" then my_list.add(prompt('What is it you would like to add?'))
 			when "2" then puts my_list.show
 			when "3" then my_list.write_to_file(prompt("Please enter filename"))
+			when '4' then my_list.read_from_file(prompt("Please enter filename"))
 			else puts "I don't understand that response"
 		end
 		prompt('Press enter to continue', '')
