@@ -66,8 +66,7 @@ if __FILE__ == $PROGRAM_NAME
 	until 'q'.include?(user_input = prompt(*show).downcase)
 		case user_input
 		when "1" then my_list.add(prompt('What is it you would like to add?'))
-		when "2" then puts "selected 2 (Show)"
+		when "2" then puts my_list.show
 		end
-		puts my_list.show
 	end
 end
