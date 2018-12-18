@@ -52,7 +52,6 @@ class Task
 	def initialize(description)
 		@description = description
 	end
-
 end
 
 #Program runner
@@ -65,8 +64,9 @@ if __FILE__ == $PROGRAM_NAME
 	#Until the user quits, display the menu and prompt the user for their input
 	until 'q'.include?(user_input = prompt(*show).downcase)
 		case user_input
-		when "1" then my_list.add(prompt('What is it you would like to add?'))
-		when "2" then puts my_list.show
+			when "1" then my_list.add(prompt('What is it you would like to add?'))
+			when "2" then puts my_list.show
+			else puts "I don't understand that response"
 		end
 	end
 end
