@@ -65,8 +65,9 @@ if __FILE__ == $PROGRAM_NAME
 	#Until the user quits, display the menu and prompt the user for their input
 	until 'q'.include?(user_input = prompt(*show).downcase)
 		case user_input
-		when "1" then puts "selected 1 (Add)"
+		when "1" then my_list.add(prompt('What is it you would like to add?'))
 		when "2" then puts "selected 2 (Show)"
 		end
+		puts my_list.show
 	end
 end
