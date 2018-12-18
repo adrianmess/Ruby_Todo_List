@@ -69,4 +69,5 @@ if __FILE__ == $PROGRAM_NAME
 			else puts "I don't understand that response"
 		end
 	end
+			puts "Thanks for using the menu system!"
 end
