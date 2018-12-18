@@ -43,6 +43,13 @@ class List
 		# .select { |i| puts i.include?()}
 	end
 
+	#allows a user of the Todo List program to write tasks to a file.
+	#It should take the filename as an argument and output the description
+	#of the tasks in the all tasks array as a list.
+	def write_to_file(filename)
+		IO.write(filename, @all_tasks.map(&:to_s).join.join("\n"))
+	end
+
 end
 
 #add tasks to list - manages actions that can be implemented on a task object
