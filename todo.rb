@@ -91,7 +91,8 @@ if __FILE__ == $PROGRAM_NAME
 		case user_input
 			when "1" then my_list.add(prompt('What is it you would like to add?'))
 			when "2" then puts my_list.show
-			when "3" then puts "update"
+			when "3"
+				my_list.update(prompt("Which task do you want to update?").to_i, prompt("Enter Task Description:",''))
 			when "4"
 				puts my_list.show
 				my_list.delete(prompt("Enter number of item to delete").to_i)
