@@ -41,8 +41,9 @@ class List
 
 	#method displays all tasks
 	def show
-		@all_tasks
-		# .select { |i| puts i.include?()}
+		#Identify task by number. Iterate through all_tasks array, use with_index to
+		#show index number.
+		@all_tasks.map.with_index { |l, i| "(#{i.next}): #{l}"}
 	end
 
 	#allows a user of the Todo List program to write tasks to a file.
