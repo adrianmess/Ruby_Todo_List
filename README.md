@@ -1,3 +1,7 @@
+## Ruby ToDo List App
+
+<img src="http://www.adriancodes.com/github_images/ruby_todo_list.jpg">
+
 Core User Stories
 1. As a user I can create a todo list
 2. As a user I can add tasks to the todo list
