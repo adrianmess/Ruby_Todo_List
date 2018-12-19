@@ -46,6 +46,10 @@ class List
 		@all_tasks.map.with_index { |l, i| "(#{i.next}): #{l}"}
 	end
 
+	def delete(task_number)
+		all_tasks.delete_at(task_number -1)
+	end
+
 	#allows a user of the Todo List program to write tasks to a file.
 	#It should take the filename as an argument and output the description
 	#of the tasks in the all tasks array as a list.
@@ -82,7 +86,7 @@ if __FILE__ == $PROGRAM_NAME
 		case user_input
 			when "1" then my_list.add(prompt('What is it you would like to add?'))
 			when "2" then puts my_list.show
-			when "3" then puts "deleted"
+			when "3" my_list.delete
 			when "4" then my_list.write_to_file(prompt("Please enter filename"))
 			when '5'
 				begin
