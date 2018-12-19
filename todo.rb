@@ -6,6 +6,7 @@ module Menu
 				2) Show
 				3) Write list to a File
 				4) Read list from a File
+				5) Delete a task from the list
 				Q) Quit "
 	end
 
