@@ -81,8 +81,9 @@ if __FILE__ == $PROGRAM_NAME
 		case user_input
 			when "1" then my_list.add(prompt('What is it you would like to add?'))
 			when "2" then puts my_list.show
-			when "3" then my_list.write_to_file(prompt("Please enter filename"))
-			when '4'
+			when "3" then puts "deleted"
+			when "4" then my_list.write_to_file(prompt("Please enter filename"))
+			when '5'
 				begin
 					 my_list.read_from_file(prompt("Please enter filename"))
 				rescue Errno::ENOENT
