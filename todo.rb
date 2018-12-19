@@ -51,6 +51,10 @@ class List
 		all_tasks.delete_at(task_number -1)
 	end
 
+	def update(task_number, task)
+		all_tasks[task_number - 1] = task
+	end
+
 	#allows a user of the Todo List program to write tasks to a file.
 	#It should take the filename as an argument and output the description
 	#of the tasks in the all tasks array as a list.
